@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<meta charset="utf-8">
+	<title>Embarquement</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</header>
+<body>
+  <$php
+  $base = mysql_connect ('serveur', 'root', 'root');
+  mysql_select_db ('');>
+    <div id=tableau>
+      <p>Choix pour départ navette</p>
+      <table id="table">
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>NSS</th>
+        </tr>
+        <tr>
+          <td>Jean</td>
+          <td>Moulin</td>
+          <td>1 02 08 44 185 326 15</td>
+        </tr>
+
+      </table>
+    </div>
+  <div id=tableau>
+    <button id="show_popup">Ajouter navette</button>
+        <div id="popup">
+            <div id="popup_content">
+                <span id="close_popup"><img src="content/close.png"></span><br/>
+                <form method="POST">
+                    <br/><input type="text" name="nom navette" placeholder="nom navette"/><br/>
+                    <br/><input type="text" name="numéro navette" placeholder="numéro navette"/><br/>
+                    <br/><input type="text" name="position navette" placeholder="position navette"/><br/>
+                    <input type="submit" name="Valider" value="Valider"/></form><br/>
+                </form>
+            </div>
+        </div>
+        <script>
+var popup = document.getElementById('popup');
+var show_popup = document.getElementById("show_popup");
+var close_popup = document.getElementById("close_popup");
+show_popup.onclick = function(){
+    popup.style.display = "block";
+}
+close_popup.onclick = function(){
+    popup.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target == popup){
+        popup.style.display = "none";
+    }
+}
+        </script>
+    <p>Navette</p>
+        <table id="table">
+          <tr>
+            <th>Nom navette</th>
+            <th>numéro navette</th>
+            <th>position</th>
+          </tr>
+          <tr>
+            <td>Jean</td>
+            <td>Moulin</td>
+            <td>1 02 08 44 185 326 15</td>
+          </tr>
+
+        </table>
+      </div>
+  <button>Valider départ</button>
+
+
+
+
+
+
+
+
+</body>
+</html>

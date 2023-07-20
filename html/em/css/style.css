@@ -1,0 +1,59 @@
+body{
+
+	margin: 2%;
+	align-content: left;
+    width: 100%;
+    font-family: Verdana;
+}
+
+#choixnav{
+    font-size: 24px;
+    width: 80%;
+    margin: 2%;
+    position: relative;
+    float: left;
+}
+
+#seletc{
+
+}
+
+#slct{
+    font-size: 24px;
+
+}
+ th, td {
+  background-color: white;
+  border-style: outset ;
+  border-width: 5px ;
+  border-color: #006100;
+}
+
+#boutton{
+    font-size: 24px;
+    margin:  2%;
+    border: 5px;.
+}
+
+#tableau{
+    width: 80%;
+    height: 20%;
+    margin:  2%;
+	border: 5px;.
+    border-style: ;
+	position: relative;
+  float: left;
+  font-size: 24px;
+  text-align: center;
+}
+
+#nav_list{
+        width: 80%;
+    height: 20%;
+    margin:  2%;
+    position: relative;
+    float: left;
+    font-size: 24px;
+    text-align: center;
+}
+}
